@@ -1,0 +1,56 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.image {
+  position: relative;
+}
+
+/* .image img {
+  width: 100%;
+  height: auto;
+} */
+
+.owl-prev, 
+.owl-next {
+    font-size: 36px !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  margin-right: 5vw;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  margin-left: 10px;
+}
+
+
+
+.image img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and crop image */
+}
+
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+}
+
+.description h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.description p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
